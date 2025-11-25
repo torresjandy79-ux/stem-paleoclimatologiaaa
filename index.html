@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Paleoclimatología</title>
+
+<style>
+body {
+    margin: 0;
+    background-color: #ffeef5;
+    font-family: Arial, sans-serif;
+}
+
+/* Títulos */
+h1, h2 {
+    color: #d63384;
+    text-shadow: 1px 1px 2px black;
+}
+h1 {
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 20px;
+    border-bottom: 3px solid white;
+    font-family: 'Courier New', monospace;
+}
+p, li {
+    color: #2c3e50;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+/* Imágenes */
+img.imagen-pequena {
+    width: 200px;
+    margin: 10px;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+/* Sidebar */
+.sidebar {
+    height: 100vh;
+    width: 220px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #2c3e50;
+    padding-top: 20px;
+}
+.sidebar a {
+    display: block;
+    color: white;
+    padding: 15px 20px;
+    text-decoration: none;
+    cursor: pointer;
+}
+.sidebar a:hover {
+    background-color: #34495e;
+}
+
+/* Contenido */
+.content {
+    margin-left: 240px;
+    padding: 20px;
+}
+
+/* Cajas */
+.caja {
+    border: 2px solid white;
+    background-color: #fcd6e2;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 12px;
+    box-shadow: 2px 2px 6px #555;
+    display: none;
+}
+.caja.active {
+    display: block;
+}
+</style>
+</head>
+
+<body>
+
+<!-- Sidebar -->
+<div class="sidebar">
+    <a onclick="mostrarSeccion('inicio')">Inicio</a>
+    <a onclick="mostrarSeccion('ciencias')">Ciencias</a>
+    <a onclick="mostrarSeccion('ingles')">Inglés</a>
+    <a onclick="mostrarSeccion('espanol')">Español</a>
+    <a onclick="mostrarSeccion('edfisica')">Ed. Física</a>
+    <a onclick="mostrarSeccion('edambiental')">Ed. Ambiental</a>
+    <a onclick="mostrarSeccion('informatica')">Informática</a>
+    <a onclick="mostrarSeccion('matematicas')">Matemáticas</a>
+</div>
+
+<!-- CONTENIDO -->
+<div class="content">
+<h1>Paleoclimatología</h1>
+
+<!-- INICIO -->
+<div class="caja" id="inicio">
+    <h2>Bienvenido</h2>
+    <p>La <b>paleoclimatología</b> es la ciencia que estudia cómo era el clima de la Tierra en el pasado.</p>
+   
+    <h3>¿Cómo se estudia?</h3>
+    <ul>
+        <li><b>Hielos polares</b></li>
+        <li><b>Sedimentos oceánicos</b></li>
+        <li><b>Anillos de los árboles</b></li>
+        <li><b>Corales</b></li>
+    </ul>
+
+    <div>
+        <img class="imagen-pequena"
+             src="https://img.freepik.com/vector-gratis/ilustracion-sequia-dibujada-mano_23-2151316927.jpg&quot;
+             alt="Sequía">
+
+        <img class="imagen-pequena"
+             src="https://img.freepik.com/vector-gratis/ilustracion-contaminaciones-tierra_1308-39766.jpg&quot;
+             alt="Contaminación">
+
+        <img class="imagen-pequena"
+             src="https://media.istockphoto.com/id/1473888113/es/vector/energ%C3%ADa-renovable-y-acuarela-de-tierra.jpg&quot;
+             alt="Energía renovable">
+    </div>
+</div>
+
+<!-- CIENCIAS -->
+<div class="caja" id="ciencias">
+    <h2>Ciencias</h2>
+    <p>Aprendimos sobre cómo estudiar el clima del pasado.</p>
+</div>
+
+<!-- ESPAÑOL -->
+<div class="caja" id="espanol">
+    <h2>Español</h2>
+    <p>Escribimos una historia creada por nosotros sobre paleoclimatología.</p>
+    <iframe src="https://docs.google.com/presentation/d/1TS7poNNPxCmLOMWlI0lvPo6DIvtNEeHjGojgKsw5NBA/edit?usp=drive_link frameborder="0" width="700" height="450" allowfullscreen></iframe>
+</div>
+
+<!-- INGLÉS -->
+<div class="caja" id="ingles">
+    <h2>English</h2>
+    <p>
+        We created a glossary, a comic based on a story we wrote about paleoclimatology,
+        and a timeline of the ancient eras related to paleoclimatology.
+    </p>
+
+    <iframe src="https://docs.google.com/presentation/d/1mFZDyxtxZBbae9-Acu8y2ja1zsL2hc_I/preview&quot;
+        frameborder="0" width="700" height="450" allowfullscreen></iframe>
+
+    <br><br>
+    <a href="https://drive.google.com/file/d/1oWvMWWru0Ce69VZl3JW0HCA0j1fK3U65/view?usp=drive_link&quot;
+       target="_blank"
+       class="boton-enlace">
+       Open English Project
+    </a>
+</div>
+
+<!-- EDUCACIÓN FÍSICA -->
+<div class="caja" id="edfisica">
+    <h2>Educación Física</h2>
+    <p>Tomamos temperatura, frecuencia cardíaca y respiratoria en varios ejercicios.</p>
+</div>
+
+<!-- EDUCACIÓN AMBIENTAL -->
+<div class="caja" id="edambiental">
+    <h2>Educación Ambiental</h2>
+    <p>Estudiamos cómo proteger el medio ambiente.</p>
+    <iframe width="560" height="315"
+        src="https://www.youtube.com/embed/oOwEsU5zrmI&quot;
+        frameborder="0"
+        allowfullscreen></iframe>
+</div>
+
+<!-- INFORMÁTICA -->
+<div class="caja" id="informatica">
+    <h2>Informática</h2>
+    <p>Creamos páginas web para presentar los trabajos.</p>
+</div>
+
+<!-- MATEMÁTICAS -->
+<div class="caja" id="matematicas">
+    <h2>Matemáticas</h2>
+    <p>Analizamos datos y gráficas sobre el clima.</p>
+</div>
+
+</div>
+<!-- FIN CONTENT -->
+
+<script>
+function mostrarSeccion(id) {
+    document.querySelectorAll('.caja').forEach(seccion => {
+        seccion.classList.remove('active');
+    });
+    document.getElementById(id).classList.add('active');
+}
+
+// mostrar Inicio al cargar
+mostrarSeccion('inicio');
+</script>
+
+</body>
+</html>
